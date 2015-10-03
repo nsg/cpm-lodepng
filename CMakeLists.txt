@@ -42,8 +42,8 @@ include(ExternalProject)
 set(REPO_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdParty")
 CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${REPO_SOURCE_DIR}/lodepng
-  SVN_REPOSITORY "http://lpi.googlecode.com/svn/trunk"
-  SVN_REVISION "HEAD"
+  GIT_REPOSITORY "https://github.com/lvandeve/lodepng.git"
+  GIT_TAG "eb16d900b2e82c01ba9d81b376e7fd7419edd15b"
   USE_CACHING TRUE
   )
 # Export include directory such that we have to prefix lodepng. Note the
